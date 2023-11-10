@@ -11,6 +11,7 @@ import Report from './pages/Report'
 import Login from './pages/Login'
 import Share from './pages/Share'
 import Register from './pages/Register';
+import Contact from './pages/Contact';
 function App() {
   return (
 
@@ -21,9 +22,10 @@ function App() {
             <Route path="/warehouse" element={<Warehouse id={"warehouse"} />} />
             <Route path="/share" element={<Share id={"upcoming"} />} />
             <Route path="/tools" element={<Tools id={"tools"} />} />
-            <Route path="/report" element={<Report id={"contact"} />} />
+            <Route path="/report" element={<Report id={"report"} />} />
             <Route path="/login" element={<Login id={"login"} />} />
             <Route path="/register" element={<Register id={"register"} />} />
+            <Route path="/contact" element={<Contact id={"contact"} />} />
           </Routes>
           <Toaster />
       </BrowserRouter>

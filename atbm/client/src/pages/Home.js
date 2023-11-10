@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import { Row, Container, Col } from 'react-bootstrap';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 function Home() {
 
     const [index, setIndex] = useState(0);
@@ -43,63 +44,99 @@ function Home() {
             </Carousel.Item>
           </Carousel>
         </Container>
-        <Container style={{marginTop: '15px'}}>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <Image src="image/a.png" style={{ marginRight: '10px' }} />
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h2>Tạo, hợp nhất và tự động điền mật khẩu mạnh và an toàn cho tất cả tài khoản của bạn</h2>
-              <p>SGUPass cung cấp cho bạn khả năng tạo và quản lý mật khẩu duy nhất, do đó bạn có thể tăng cường quyền riêng tư và tăng năng suất trực tuyến từ bất kỳ thiết bị hoặc vị trí nào.</p>
-            </div>
-          </div>
-        </Container>
-        <Container style={{marginTop: '15px'}}>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h2>Chia sẻ thông tin được mã hóa một cách an toàn trực tiếp với bất kỳ ai</h2>
-              <p>SGUPass Send là một tính năng cho phép tất cả người dùng truyền dữ liệu trực tiếp cho người khác, đồng thời duy trì bảo mật được mã hóa hai đầu và hạn chế tiếp xúc.</p>
-            </div>
-            <Image src="image/b.png" style={{ marginRight: '10px' }} />
-          </div>
-        </Container>
-        <Container style={{marginTop: '15px'}}>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <Image src="image/c.png" style={{ marginRight: '10px' }} />
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h2>Đạt được sự an tâm với sự tuân thủ toàn diện</h2>
-              <p>Bảo vệ dữ liệu trực tuyến của bạn bằng trình quản lý mật khẩu mà bạn có thể tin cậy. SGUPass tiến hành kiểm tra bảo mật thường xuyên của bên thứ ba và tuân thủ các tiêu chuẩn GDPR, SOC 2, HIPAA, Privacy Shield và CCPA.</p>
-            </div>
-          </div>
-        </Container>
-        <div  style={{ background: 'gray', color: 'white' }}>
+        <div style={{ textAlign: 'center',marginTop:'2%',background: '#CCCC99', color: 'black' }}>
           <Container>
             <Row>
-              <Col style={{marginTop : '10px'}}>
-              <h3>Liên hệ với chúng tôi</h3>
-              </Col>
-              <Col style={{marginTop : '10px'}}>
-                <h3>Tài nguyên</h3>
-                </Col>
-              <Col style={{marginTop : '10px'}}>
-                <h3>Công cụ và trợ giúp</h3>
+              <Col><h1 >Thiết lập dễ dàng, không rắc rối<br/></h1>
+              <h5>Quản lý mật khẩu của bạn chưa bao giờ dễ dàng hơn thế</h5>
               </Col>
             </Row>
             <Row>
-              <Col >1 of 3</Col>
-              <Col>2 of 3</Col>
-              <Col>3 of 3</Col>
-            </Row>
-            <Row>
-              <Col >1 of 4</Col>
-              <Col>2 of 4</Col>
-              <Col>3 of 4</Col>
-            </Row>
-            <Row>
-              <Col >1 of 5</Col>
-              <Col>2 of 5</Col>
-              <Col>3 of 5</Col>
+              <Col>
+                <div >
+                  <Image src="image/e.png" style={{width:'30%',height:'30%',marginLeft:'5%'}} />
+                  <br/><h3 style={{fontWeight:'bold',marginTop:'10px'}}>Bắt đầu nhanh chóng</h3>
+                  <br/>Tự động tạo, lưu và điền mật khẩu trên tất cả thiết bị
+                </div>
+              </Col>
+                
+              <Col>
+              <div >
+                <Image src="image/f.png" style={{width:'30%',height:'30%',marginLeft:'5%'}} />
+                <br/><h3 style={{fontWeight:'bold',marginTop:'10px'}}>Import từ bất cứ đâu</h3>
+                <br/>Nhập từ bất kỳ trình duyệt, trình quản lý mật khẩu hoặc qua CSV chính nào
+              </div>
+              </Col>
+              <Col>
+                <div >
+                  <Image src="image/g.png" style={{width:'30%',height:'30%',marginLeft:'5%'}} />
+                  <br/><h3 style={{fontWeight:'bold',marginTop:'10px'}}>Luôn luôn hỗ trợ 24/7</h3>
+                  <br/>Được ưu tiên hỗ trợ 24/7, trò chuyện trực tiếp và hỗ trợ qua điện thoại
+                </div>
+              </Col>
             </Row>
           </Container>
-          </div>
+        </div>
+        <div style={{ textAlign: 'center',marginTop:'2%',background: '#99CCCC', color: 'black' }}>
+          <Container>
+            <Row>
+              <Col><h1 >Điều gì khiến chúng tôi an toàn hơn trình quản lý mật khẩu trên trình duyệt của bạn</h1></Col>
+            </Row>
+            <Row>
+              <Col>
+                <div style={{marginTop:'10%',textAlign:'left'}}>
+                  <CheckCircleIcon style={{ color: 'green' }} />
+                  Chống lừa đảo <br />
+                  <CheckCircleIcon style={{ color: 'green' }} />
+                  Tự động xóa clipboard của bạn <br />
+                  <CheckCircleIcon style={{ color: 'green' }} />
+                  Chỉ có bạn mới unlock được dữ liệu của bạn <br />
+                  <CheckCircleIcon style={{ color: 'green' }} />
+                  Cung cấp mật khẩu mạnh mẽ cho mọi thiết bị hoặc trình duyệt<br/> 
+                  <CheckCircleIcon style={{ color: 'green' }} />
+                  Hoạt động với tất cả các thiết bị và trình duyệt <br />
+                  <CheckCircleIcon style={{ color: 'green' }} />
+                  Hoạt động với chế độ ẩn danh/riêng tư<br />
+                  <CheckCircleIcon style={{ color: 'green' }} />
+                  Đăng nhập bằng một cú nhấp chuột vào nhiều tài khoản<br />
+                  <CheckCircleIcon style={{ color: 'green' }} />
+                  Có thể chia sẻ mật khẩu một cách an toàn với bạn bè/gia đình
+                </div>
+              </Col>
+              <Col><Image src="image/d.jpg" style={{transform: 'translate(-50%, -50%)', width: '80%', height: '70%',marginTop:'30%',marginLeft:'40%'}} /></Col>
+            </Row>
+          </Container>
+        </div>
+        <div style={{background:'#CCCC99'}}>
+          <Container style={{marginTop: '2%'}}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <Image src="image/a.png" style={{ marginRight: '10px' }} />
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <h2>Tạo, hợp nhất và tự động điền mật khẩu mạnh và an toàn cho tất cả tài khoản của bạn</h2>
+                <p>SGUPass cung cấp cho bạn khả năng tạo và quản lý mật khẩu duy nhất, do đó bạn có thể tăng cường quyền riêng tư và tăng năng suất trực tuyến từ bất kỳ thiết bị hoặc vị trí nào.</p>
+              </div>
+            </div>
+          </Container>
+          <Container style={{marginTop: '15px'}}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <h2>Chia sẻ thông tin được mã hóa một cách an toàn trực tiếp với bất kỳ ai</h2>
+                <p>SGUPass Send là một tính năng cho phép tất cả người dùng truyền dữ liệu trực tiếp cho người khác, đồng thời duy trì bảo mật được mã hóa hai đầu và hạn chế tiếp xúc.</p>
+              </div>
+              <Image src="image/b.png" style={{ marginRight: '10px' }} />
+            </div>
+          </Container>
+          <Container style={{marginTop: '15px'}}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <Image src="image/c.png" style={{ marginRight: '10px' }} />
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <h2>Đạt được sự an tâm với sự tuân thủ toàn diện</h2>
+                <p>Bảo vệ dữ liệu trực tuyến của bạn bằng trình quản lý mật khẩu mà bạn có thể tin cậy. SGUPass tiến hành kiểm tra bảo mật thường xuyên của bên thứ ba và tuân thủ các tiêu chuẩn GDPR, SOC 2, HIPAA, Privacy Shield và CCPA.</p>
+              </div>
+            </div>
+          </Container>
+        </div>   
+        
       </div>
   );
 }
